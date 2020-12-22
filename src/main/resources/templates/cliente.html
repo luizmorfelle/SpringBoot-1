@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+
+		<div class="row"> 
+			<span class="bg-primary text-white">Nome do Cliente :</span> 
+			<span class="h6" th:text="${cliente.nome}"> </span>
+		</div>
+
+		<div class="row">
+			<span class="bg-primary text-white">Endereço do Cliente :</span> 
+			<span class="h6" th:text="${cliente.endereco}"> </span>
+		</div>
+
+		<div class="row">
+			<span class="bg-primary text-white">Cnpj do Cliente :</span> 
+			<span class="h6" th:text="${cliente.cnpj}"> </span>
+		</div>
+
+		<div class="row">
+			<span class="bg-primary text-white">Número do Cliente :</span> 
+			<span class="h6" th:text="${cliente.telefone}"></span>
+		</div>
+
+		<div class="row">
+			<form action="/" method="GET">
+				<input type="submit" value="Voltar" class="btn btn-dark">
+			</form>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
